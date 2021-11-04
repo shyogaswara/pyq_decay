@@ -22,6 +22,7 @@ in hours that will be used to analyze data.
 
 HOW TO INSTALL PACKAGES
 - for Anaconda / Miniconda user
+
 in your terminal, make sure that this file exist by using ls
 and then type :
 
@@ -34,13 +35,19 @@ to activate this environment, go to terminal and then type :
 conda activate py3
 
 - for pip
+
 in your terminal, type :
+
 pip install pandas
+
 pip install numpy
+
 pip install matplotlib
 
 additionally, you may install cartopy with
-pip install cartopy.
+
+pip install cartopy
+
 if you by any chance decide to not install cartopy
 please disable line 15 and 16 by adding # at the very first character
 if using python 3, use pip3 instead.
