@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block title %}Input Data Page{% endblock %}
+
+{% block content %}
+<form method='POST' enctype="multipart/form-data">
+	<h3 align='center'>Input File</h3>
+	<div class='form-group'>
+		<label for='events'>Events File</label>
+		<br/>
+		<input type='file' id='file' name='file'/>
+	</div>
+	<br />
+	<h3 align='center'>Choose Frequency</h3>
+	<div class='form-group'>
+		<label for='freq'>Frequency(Hours)</label>
+		<select class='form-control' id='freq' name='freq'>
+			<option value='24'>24 Hours</option>
+			<option value='12'>12 Hours</option>
+			<option value='6'>6 Hours</option>
+			<option value='3'>3 Hours</option>
+		</select>
+
+	</div>
+	<br />
+	<button type='submit' value = 'Upload' class='btn btn-primary'>Calculate</button>
+</form>
+{% endblock %}

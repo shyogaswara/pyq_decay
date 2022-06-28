@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block title %}output{% endblock %}
+{% block content %}
+<h1>This Is The Output Page</h1>
+{% for imagelist in imagelist %}
+<center>
+<img src="{{url_for('static', filename=imagelist)}}"/>
+</center>
+{% endfor %}
+{% endblock %}
